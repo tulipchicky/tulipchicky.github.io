@@ -1,0 +1,133 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(https://images.unsplash.com/photo-1444318226545-dfd6106d7ec4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+	/*background-color: green;
+	background-blend-mode: screen;*/
+	display: flex;
+	background-size: 100%;
+}
+.rev-section{
+	margin: auto;
+	padding: 0 1rem;
+	max-width: 1100px;
+	text-align: center;
+}
+.title{
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	color: rgb(50,50,50);
+	margin-bottom: 0.5rem;
+
+}
+.note{
+	font-size: 1.1rem;
+	color: rgb(150,150,150);
+	font-style: italic;
+
+}
+.reviews{
+	margin: 2rem auto;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.review{
+	margin: 0 1rem ;
+	min-width: 300px;
+	flex: 1;
+}
+.head-review{
+	margin: 1.75rem auto;
+	width: 150px;
+	height: 150px;
+}
+.profile-pic{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+.profile-pic-public{
+	width: 160px;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+.body-review{
+	background-color: rgb(238,238,238);
+	padding: 2.5rem;
+	box-shadow: 2px 2px 10px 3px rgb(225,225,225);
+}
+.name-review{
+	font-size: 1.5rem;
+	color: rgb(50,50,50);
+	margin-bottom: .25rem;
+}
+.place-review{
+	color: red;
+	font-style: italic;
+}
+.rating-current{
+	color: rgb(253,180,42);
+	margin: 1.5rem;
+
+}
+.txt-center {
+    text-align: center;
+}
+.hide {
+    display: none;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.rating {
+    width: 90px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+}
+
+.rating > label {
+    float: right;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1.1em;
+    cursor: pointer;
+    color: #000;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+    color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+
+}
+@media(max-width: 687px){
+	.review{
+		margin-top: 1.5rem;
+
+	}
+}

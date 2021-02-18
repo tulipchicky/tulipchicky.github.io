@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+
+  </style>
+  <link rel="stylesheet" href="review.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+   <script src="https://kit.fontawesome.com/44f557ccce.js"></script>
+ <meta charset="UTF-8">
+
+   <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> -->
+
+    <title>7 Best Baby!</title>
+
+</head>
+<body  id='myimage'>
+ <!--  For body : onload='changeimage(2)' -->
+
+<h1 style="margin: 20px auto; color: white;" >7 Best Baby</h1>
+<br/>
+  <div style="margin: 20px auto;" >
+    <form style="border-radius: 20px; background-color: rgba( 255, 255, 255,0.2);padding: 20px;">
+      <label for="name" style="color: white;">Baby's Name</label>
+      <input type="text" name="name" id="name"><br>
+       <label for="phone" style="color: white;">Guardian's phone</label>
+      <input type="text" name="phone" id="phone"><br>
+       <label for="email" style="color: white;">Email</label>
+      <input type="text" name="email" id="email"><br>
+      <label for="dob" style="color: white;">Date of Birth</label>
+      <input type="date" name="dob" id="dob"><br>
+
+      <label for="city" style="color: white;">City</label>
+      <input type="text" name="city" id="city"><br>
+ <label for="profile-pic" style="color: white;">Baby's Photo</label>
+ <br/>
+<!--  <button style="display:block;" class="btn-floating waves-effect waves-light red" onclick="document.getElementById('input-image').click()">+</button> -->
+      <input  type="file" accept="image/*" id="input-image" name="input-image" >
+      <br/>
+      <img  src="" id="image" name="image" class="profile-pic" >
+      <label id="progressStatus"></label>
+      <br>
+      <div style="text-align: center; margin: 20px;">
+      <button id="submit" style="text-align: center;" class="btn waves-effect waves-light">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCE7CmuN9ibyvPksnuZ-T7wKOLzU46o48k",
+    authDomain: "sevenhb-49121.firebaseapp.com",
+    projectId: "sevenhb-49121",
+    storageBucket: "sevenhb-49121.appspot.com",
+    messagingSenderId: "664223323074",
+    appId: "1:664223323074:web:4521e3c21e810476b77c5b",
+    measurementId: "G-2JCF51FEH6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+<script src="./function.js"></script>
+
+</body>
+</html>

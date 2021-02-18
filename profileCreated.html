@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+
+  </style>
+  <link rel="stylesheet" href="review.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+   <script src="https://kit.fontawesome.com/44f557ccce.js"></script>
+ <meta charset="UTF-8">
+
+   <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> -->
+
+    <title>7 Best Baby</title>
+
+</head>
+<body>
+
+  <div>
+    <p>
+
+    </p>
+  </div>
+
+  <div>
+    <form>
+        <img class="profile-pic" src="" id="image" name="image"><br/>
+      <label for="name">Baby's Name: </label>
+      <label name="name" id="nameText"></label><br>
+
+       <label for="email">Email: </label>
+      <label name="email" id="emailText"></label><br>
+
+           <label for="phone">Guardian's Phone: </label>
+      <label name="phone" id="phoneText"></label><br>
+
+      <label for="dob">Date of Birth: </label>
+      <label name="dob" id="dobText"></label><br>
+
+      <label for="city">City: </label>
+      <label name="city" id="cityText"></label><br>
+
+      <label>Current Rating: </label>
+       <label id="cur_rat"></label><br>
+      <br>
+
+      <div class="rating">
+            <input onclick="onratingClicked('star5')" id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+            <label  for="star5">☆</label>
+            <input onclick="onratingClicked('star4')" id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+            <label for="star4">☆</label>
+            <input onclick="onratingClicked('star3')" id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+            <label for="star3">☆</label>
+            <input  onclick="onratingClicked('star2')" id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+            <label for="star2">☆</label>
+            <input onclick="onratingClicked('star2')" id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+            <label  for="star1">☆</label>
+            <div class="clear"></div>
+        </div>
+
+
+
+    </form>
+    <br/>
+
+    <br/>
+
+    <button id="loadList" style="text-align: center;" class="btn waves-effect waves-light">View Babies</button>
+  </div>
+   <div>
+    <a id="whatsappRef" href="whatsapp://send?text=Hello,vote me for my Birthday by visiting https://justaddress.in/profileCreated.html?" style="color: green; text-decoration: none;"><img style="width:60px;height:60px;" src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png" alt="Whatsapp" /></a>
+
+    <br/>
+    <a id="fbRef" href="https://facebook.com/sharer.php?u=https://justbike.in/hi" style="color: blue; text-decoration: none;">
+      <img style="width:60px;height:60px;" src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+    <br/>
+    <a id="twitterRef" href="https://twitter.com/share?url=https://justbike.in&amp;text=7%Happy%Birthday&amp;hashtags=7HappyBirthday" style="color: blue; text-decoration: none;"><img style="width:60px;height:60px;" src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+    <br/>
+    <!-- <a href="https://api.whatsapp.com/send?text=Hello,how are you" style="color: green; text-decoration: none;">Share on whatsapp</a> -->
+  </div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCE7CmuN9ibyvPksnuZ-T7wKOLzU46o48k",
+    authDomain: "sevenhb-49121.firebaseapp.com",
+    projectId: "sevenhb-49121",
+    storageBucket: "sevenhb-49121.appspot.com",
+    messagingSenderId: "664223323074",
+    appId: "1:664223323074:web:4521e3c21e810476b77c5b",
+    measurementId: "G-2JCF51FEH6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script><!--
+<script src="./function.js"></script> -->
+<script src="./profileCreated.js"></script>
+</body>
+</html>
